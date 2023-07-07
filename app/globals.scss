@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+  appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #666;
+  background-color: #dbe1f0;
+}
