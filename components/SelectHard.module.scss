@@ -1,0 +1,28 @@
+.selectHard {
+  display: flex;
+  gap: 24px;
+}
+
+.selectOption {
+  border: 2px solid #d4d8e4;
+  border-radius: 24px;
+  padding: 8px;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.2;
+  }
+
+  &.active {
+    border-color: #75a5b8;
+  }
+
+  &:hover {
+    border-color: #75a5b8;
+  }
+}
+
+.optionImage {
+  object-fit: contain;
+}
