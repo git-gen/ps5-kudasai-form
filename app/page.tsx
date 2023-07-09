@@ -98,19 +98,21 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.header}>PS5くださいフォーム</div>
-      <div className={styles.container}>
-        {currentStage === stages[0] ?
-          <div className={styles.form}>
-            <div className={styles.inputLabel}>欲しいハードを選択</div>
-            <SelectHard select={hard} onChange={handleHard} />
-            <label htmlFor="name" className={styles.inputLabel}>名前</label>
-            <input id="name" type="text" value={name} onChange={handleName} className={styles.textInput} />
-            <label htmlFor="comment" className={styles.inputLabel}>ご要望</label>
-            <input id="comment" type="text" value={comment} onChange={handleComment} className={styles.textInput} />
-          </div>
-        : <ConfirmForm />}
-        <Buttons />
-        {isError && <div className={styles.errorMessage}>全ての項目を入力してください</div>}
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          {currentStage === stages[0] ?
+            <div className={styles.form}>
+              <div className={styles.inputLabel}>欲しいハードを選択</div>
+              <SelectHard select={hard} onChange={handleHard} />
+              <label htmlFor="name" className={styles.inputLabel}>名前</label>
+              <input id="name" type="text" value={name} onChange={handleName} className={styles.textInput} />
+              <label htmlFor="comment" className={styles.inputLabel}>ご要望</label>
+              <input id="comment" type="text" value={comment} onChange={handleComment} className={styles.textInput} />
+            </div>
+          : <ConfirmForm />}
+          <Buttons />
+          {isError && <div className={styles.errorMessage}>全ての項目を入力してください</div>}
+        </div>
       </div>
     </main>
   )

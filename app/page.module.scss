@@ -9,13 +9,16 @@
   text-align: center;
 }
 
+.wrapper {
+  min-width: 512px;
+  padding: 0 24px 24px;
+}
+
 .container {
   max-width: 1028px;
-  min-width: 512px;
   background-color: white;
   margin: auto;
   padding: 64px;
-  margin: 0 24px 24px;
   border-radius: 24px;
 }
 

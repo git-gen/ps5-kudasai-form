@@ -10,6 +10,9 @@ docker-composeでアプリ起動
 # ビルド
 $ docker-compose build
 
+# yarn install
+$ docker-compose run nextjs yarn
+
 # コンテナ起動
 $ docker-compose up
 ```
