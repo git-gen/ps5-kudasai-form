@@ -11,9 +11,11 @@
 
 .container {
   max-width: 1028px;
+  min-width: 512px;
   background-color: white;
   margin: auto;
   padding: 64px;
+  margin: 0 24px 24px;
   border-radius: 24px;
 }
 
@@ -48,4 +50,11 @@
   text-align: center;
   font-size: 14px;
   color: #ff6347;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
